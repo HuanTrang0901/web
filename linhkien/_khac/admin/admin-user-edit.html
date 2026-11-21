@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thông tin người dùng – Quản trị</title><link rel="stylesheet" href="../style.css"></head><body>
+<div class="admin"><aside><h3>⚡ Quản trị</h3><a class="" href="admin.html">🏠 Tổng quan</a><a class="on" href="admin-users.html">👥 Quản lý người dùng</a><a class="" href="admin-products.html">📦 Quản lý sản phẩm</a><a class="" href="admin-orders.html">🧾 Quản lý đơn hàng</a><a class="" href="admin-stats.html">📊 Thống kê</a><a class="store-link" href="../user/index.html">🌐 Xem trang Cửa hàng</a><a class="logout-link" href="admin-login.html">🚪 Đăng xuất</a></aside>
+<main><div class="box"><h2>Thông tin người dùng</h2><div class="row"><div><label>Họ và tên</label><input type="text" value="Nguyễn Văn A"></div><div><label>Tên đăng nhập</label><input type="text" value="nguyenvana"></div></div>
+<div class="row"><div><label>Email</label><input type="text" value="nguyenvana@gmail.com"></div><div><label>Số điện thoại</label><input type="text" value="0901234567"></div></div>
+<label>Địa chỉ</label><input type="text" value="273 An Dương Vương, P.4, Q.5, TP.HCM"><label>Mật khẩu mới</label><input type="password">
+<label>Trạng thái</label><select><option>Hoạt động</option><option>Đã khóa</option></select>
+<p style="margin-top:18px"><a class="btn" href="admin-users.html">Lưu</a> <a class="btn gray" href="admin-users.html">Hủy</a></p></div></main></div>
+<!-- Pure CSS Modals (Không dùng JavaScript) -->
+<div id="toast-saved" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Đã lưu thông tin thành công!</h3>
+    <p>Dữ liệu của bạn đã được cập nhật vào hệ thống TechParts.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Đóng thông báo</a>
+    </div>
+  </div>
+</div>
+
+<div id="toast-updated" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Cập nhật trạng thái thành công!</h3>
+    <p>Trạng thái đơn hàng đã được lưu lại trên hệ thống quản trị.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Hoàn tất</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-delete" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">⚠️</div>
+    <h3>Xác nhận xóa dữ liệu?</h3>
+    <p>Bạn có chắc chắn muốn xóa mục này khỏi hệ thống? Thao tác này không thể hoàn tác.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Xác nhận xóa</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-lock" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--or)">
+    <div style="font-size:42px">🔒</div>
+    <h3>Xác nhận khóa tài khoản?</h3>
+    <p>Tài khoản này sẽ tạm thời không thể đăng nhập hoặc đặt hàng mới.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Khóa tài khoản</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-cancel" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">🧾</div>
+    <h3>Xác nhận hủy đơn hàng?</h3>
+    <p>Bạn có chắc chắn muốn gửi yêu cầu hủy đơn hàng #DH0002 này không?</p>
+    <div class="css-modal-actions">
+      <a href="orders.html" class="btn red">Đồng ý hủy đơn</a>
+      <a href="#" class="btn gray">Quay lại</a>
+    </div>
+  </div>
+</div>
+</body></html>

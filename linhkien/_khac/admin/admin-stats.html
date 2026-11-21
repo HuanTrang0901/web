@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thống kê khách hàng – Quản trị TechParts</title><link rel="stylesheet" href="../style.css"></head><body>
+<div class="admin"><aside><h3>⚡ Quản trị</h3><a class="" href="admin.html">🏠 Tổng quan</a><a class="" href="admin-users.html">👥 Quản lý người dùng</a><a class="" href="admin-products.html">📦 Quản lý sản phẩm</a><a class="" href="admin-orders.html">🧾 Quản lý đơn hàng</a><a class="on" href="admin-stats.html">📊 Thống kê</a><a class="store-link" href="../user/index.html">🌐 Xem trang Cửa hàng</a><a class="logout-link" href="admin-login.html">🚪 Đăng xuất</a></aside><main><div class="top"><h1>Thống kê khách hàng</h1><span>👤 Quản trị viên</span></div>
+<div class="box"><h2>Chọn khoảng thời gian</h2><div class="filters"><div><label>Từ ngày</label><input type="date" value="2026-10-01"></div><div><label>Đến ngày</label><input type="date" value="2026-11-07"></div></div>
+<div class="tabs pick" style="margin:16px 0 0"><input type="radio" name="range" id="r0"><label for="r0">7 ngày qua</label><input type="radio" name="range" id="r1"><label for="r1">30 ngày qua</label><input type="radio" name="range" id="r2"><label for="r2">Tháng 10 – 11</label><input type="radio" name="range" id="r3"><label for="r3">Tất cả</label></div>
+<div class="fbtn"><a class="btn" tabindex="0">📊 Thống kê</a></div></div>
+<div class="stats"><div><span>💰</span><b>5.400.000₫</b>Tổng doanh thu</div><div><span>🧾</span><b>7</b>Đơn hàng hợp lệ</div><div><span>👥</span><b>5</b>Khách hàng mua</div><div><span>📈</span><b>771.000₫</b>Trung bình / đơn</div></div>
+<div class="box"><h2>🏆 Top 5 khách hàng mua nhiều nhất</h2><p style="color:#64748b;margin-bottom:16px">Từ 01/10/2026 đến 07/11/2026 · xếp giảm dần theo tổng tiền mua · không tính đơn đã hủy</p><div class="rk t1" style="animation-delay:0.08s"><div class="medal">🥇<small>Hạng 1</small></div><div><div class="hd"><div class="nm"><i>A</i>Nguyễn Văn A</div><div class="amt">2.450.000₫</div></div><div class="bar"><i style="width:100%;animation-delay:0.1s"></i></div><details><summary>📄 Xem 2 đơn hàng đã mua</summary><table><tr><th>Mã đơn</th><th>Ngày đặt</th><th>Giá trị</th><th></th></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0007</a></td><td>04/11/2026</td><td><b>2.115.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0002</a></td><td>28/10/2026</td><td><b>335.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr></table></details></div></div><div class="rk" style="animation-delay:0.16s"><div class="medal">🥈<small>Hạng 2</small></div><div><div class="hd"><div class="nm"><i>B</i>Trần Thị B</div><div class="amt">1.200.000₫</div></div><div class="bar"><i style="width:49%;animation-delay:0.2s"></i></div><details><summary>📄 Xem 2 đơn hàng đã mua</summary><table><tr><th>Mã đơn</th><th>Ngày đặt</th><th>Giá trị</th><th></th></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0005</a></td><td>30/10/2026</td><td><b>1.080.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0001</a></td><td>15/10/2026</td><td><b>120.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr></table></details></div></div><div class="rk" style="animation-delay:0.24s"><div class="medal">🥉<small>Hạng 3</small></div><div><div class="hd"><div class="nm"><i>C</i>Lê Văn C</div><div class="amt">980.000₫</div></div><div class="bar"><i style="width:40%;animation-delay:0.30000000000000004s"></i></div><details><summary>📄 Xem 1 đơn hàng đã mua</summary><table><tr><th>Mã đơn</th><th>Ngày đặt</th><th>Giá trị</th><th></th></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0003</a></td><td>28/10/2026</td><td><b>980.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr></table></details></div></div><div class="rk" style="animation-delay:0.32s"><div class="medal">4️⃣<small>Hạng 4</small></div><div><div class="hd"><div class="nm"><i>D</i>Phạm Thị D</div><div class="amt">420.000₫</div></div><div class="bar"><i style="width:17%;animation-delay:0.4s"></i></div><details><summary>📄 Xem 1 đơn hàng đã mua</summary><table><tr><th>Mã đơn</th><th>Ngày đặt</th><th>Giá trị</th><th></th></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0008</a></td><td>06/11/2026</td><td><b>420.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr></table></details></div></div><div class="rk" style="animation-delay:0.4s"><div class="medal">5️⃣<small>Hạng 5</small></div><div><div class="hd"><div class="nm"><i>E</i>Hoàng Văn E</div><div class="amt">350.000₫</div></div><div class="bar"><i style="width:14%;animation-delay:0.5s"></i></div><details><summary>📄 Xem 1 đơn hàng đã mua</summary><table><tr><th>Mã đơn</th><th>Ngày đặt</th><th>Giá trị</th><th></th></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0006</a></td><td>02/11/2026</td><td><b>350.000₫</b></td><td><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></td></tr></table></details></div></div></div></main></div>
+<!-- Pure CSS Modals (Không dùng JavaScript) -->
+<div id="toast-saved" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Đã lưu thông tin thành công!</h3>
+    <p>Dữ liệu của bạn đã được cập nhật vào hệ thống TechParts.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Đóng thông báo</a>
+    </div>
+  </div>
+</div>
+
+<div id="toast-updated" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Cập nhật trạng thái thành công!</h3>
+    <p>Trạng thái đơn hàng đã được lưu lại trên hệ thống quản trị.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Hoàn tất</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-delete" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">⚠️</div>
+    <h3>Xác nhận xóa dữ liệu?</h3>
+    <p>Bạn có chắc chắn muốn xóa mục này khỏi hệ thống? Thao tác này không thể hoàn tác.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Xác nhận xóa</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-lock" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--or)">
+    <div style="font-size:42px">🔒</div>
+    <h3>Xác nhận khóa tài khoản?</h3>
+    <p>Tài khoản này sẽ tạm thời không thể đăng nhập hoặc đặt hàng mới.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Khóa tài khoản</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-cancel" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">🧾</div>
+    <h3>Xác nhận hủy đơn hàng?</h3>
+    <p>Bạn có chắc chắn muốn gửi yêu cầu hủy đơn hàng #DH0002 này không?</p>
+    <div class="css-modal-actions">
+      <a href="orders.html" class="btn red">Đồng ý hủy đơn</a>
+      <a href="#" class="btn gray">Quay lại</a>
+    </div>
+  </div>
+</div>
+</body></html>

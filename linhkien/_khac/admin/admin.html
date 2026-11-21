@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bảng điều khiển – Quản trị TechParts</title><link rel="stylesheet" href="../style.css"></head><body>
+<div class="admin"><aside><h3>⚡ Quản trị</h3><a class="on" href="admin.html">🏠 Tổng quan</a><a class="" href="admin-users.html">👥 Quản lý người dùng</a><a class="" href="admin-products.html">📦 Quản lý sản phẩm</a><a class="" href="admin-orders.html">🧾 Quản lý đơn hàng</a><a class="" href="admin-stats.html">📊 Thống kê</a><a class="store-link" href="../user/index.html">🌐 Xem trang Cửa hàng</a><a class="logout-link" href="admin-login.html">🚪 Đăng xuất</a></aside><main><div class="top"><h1>Bảng điều khiển</h1><span>👤 Quản trị viên</span></div><div class="stats"><div><span>👥</span><b>1.248</b>Người dùng</div><div><span>📦</span><b>356</b>Sản phẩm</div><div><span>🧾</span><b>89</b>Đơn hàng mới</div><div><span>💰</span><b>48,6 tr₫</b>Doanh thu tháng</div></div>
+<div class="box"><h2>Chức năng quản trị</h2><div class="info"><a class="tile" href="admin-users.html"><h5>Truy cập nhanh</h5><b>👥 Quản lý người dùng</b></a><a class="tile" href="admin-products.html"><h5>Truy cập nhanh</h5><b>📦 Quản lý sản phẩm</b></a><a class="tile" href="admin-orders.html"><h5>Truy cập nhanh</h5><b>🧾 Quản lý đơn hàng</b></a><a class="tile" href="admin-stats.html"><h5>Truy cập nhanh</h5><b>📊 Thống kê</b></a></div></div>
+        <div class="box">
+          <h2>📈 Biểu đồ tỷ trọng doanh thu theo danh mục (Tháng 11/2026)</h2>
+          <div class="rk">
+            <div class="medal">🎛️<small>42%</small></div>
+            <div>
+              <div class="hd"><div class="nm">Vi điều khiển &amp; Kit phát triển</div><div class="amt">20.410.000₫</div></div>
+              <div class="bar"><i style="width:88%"></i></div>
+              <small style="color:var(--m)">12 mã sản phẩm · Bán chạy nhất: Arduino Uno R3, ESP32 DevKit V1</small>
+            </div>
+          </div>
+          <div class="rk">
+            <div class="medal">🌡️<small>25%</small></div>
+            <div>
+              <div class="hd"><div class="nm">Cảm biến thông minh</div><div class="amt">12.150.000₫</div></div>
+              <div class="bar"><i style="width:62%"></i></div>
+              <small style="color:var(--m)">11 mã sản phẩm · Bán chạy nhất: Cảm biến DHT22, Siêu âm HC-SR04</small>
+            </div>
+          </div>
+          <div class="rk">
+            <div class="medal">⚙️<small>20%</small></div>
+            <div>
+              <div class="hd"><div class="nm">Động cơ, Driver &amp; Module nguồn</div><div class="amt">9.720.000₫</div></div>
+              <div class="bar"><i style="width:48%"></i></div>
+              <small style="color:var(--m)">20 mã sản phẩm · Bán chạy nhất: Servo SG90, Hạ áp LM2596</small>
+            </div>
+          </div>
+        </div>
+        </main></div>
+<!-- Pure CSS Modals (Không dùng JavaScript) -->
+<div id="toast-saved" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Đã lưu thông tin thành công!</h3>
+    <p>Dữ liệu của bạn đã được cập nhật vào hệ thống TechParts.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Đóng thông báo</a>
+    </div>
+  </div>
+</div>
+
+<div id="toast-updated" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Cập nhật trạng thái thành công!</h3>
+    <p>Trạng thái đơn hàng đã được lưu lại trên hệ thống quản trị.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Hoàn tất</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-delete" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">⚠️</div>
+    <h3>Xác nhận xóa dữ liệu?</h3>
+    <p>Bạn có chắc chắn muốn xóa mục này khỏi hệ thống? Thao tác này không thể hoàn tác.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Xác nhận xóa</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-lock" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--or)">
+    <div style="font-size:42px">🔒</div>
+    <h3>Xác nhận khóa tài khoản?</h3>
+    <p>Tài khoản này sẽ tạm thời không thể đăng nhập hoặc đặt hàng mới.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Khóa tài khoản</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-cancel" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">🧾</div>
+    <h3>Xác nhận hủy đơn hàng?</h3>
+    <p>Bạn có chắc chắn muốn gửi yêu cầu hủy đơn hàng #DH0002 này không?</p>
+    <div class="css-modal-actions">
+      <a href="orders.html" class="btn red">Đồng ý hủy đơn</a>
+      <a href="#" class="btn gray">Quay lại</a>
+    </div>
+  </div>
+</div>
+</body></html>

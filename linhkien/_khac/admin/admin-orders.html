@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quản lý đơn hàng – Quản trị TechParts</title><link rel="stylesheet" href="../style.css"></head><body>
+<div class="admin"><aside><h3>⚡ Quản trị</h3><a class="" href="admin.html">🏠 Tổng quan</a><a class="" href="admin-users.html">👥 Quản lý người dùng</a><a class="" href="admin-products.html">📦 Quản lý sản phẩm</a><a class="on" href="admin-orders.html">🧾 Quản lý đơn hàng</a><a class="" href="admin-stats.html">📊 Thống kê</a><a class="store-link" href="../user/index.html">🌐 Xem trang Cửa hàng</a><a class="logout-link" href="admin-login.html">🚪 Đăng xuất</a></aside><main><div class="top"><h1>Quản lý đơn hàng</h1><span>👤 Quản trị viên</span></div>
+<div class="tabs"><a class="on" href="admin-orders.html">Tất cả <b>8</b></a><a href="admin-orders.html">⏳ Chưa xác nhận <b>2</b></a><a href="admin-orders.html">✅ Đã xác nhận <b>1</b></a><a href="admin-orders.html">📦 Đã giao <b>4</b></a><a href="admin-orders.html">❌ Đã hủy <b>1</b></a></div>
+<div class="box"><h2>Bộ lọc đơn hàng</h2><div class="filters"><div><label>Tình trạng</label><select><option>Tất cả</option><option>Chưa xác nhận</option><option>Đã xác nhận</option><option>Đã giao</option><option>Đã hủy</option></select></div>
+<div><label>Từ ngày</label><input type="date"></div><div><label>Đến ngày</label><input type="date"></div><div><label>Quận/Huyện</label><input type="text" placeholder="VD: Quận 5"></div><div><label>Tỉnh/Thành phố</label><input type="text" placeholder="VD: TP.HCM"></div></div>
+<div class="fbtn"><a class="btn gray" href="admin-orders.html">Xóa lọc</a><a class="btn" href="admin-orders.html">🔍 Lọc đơn hàng</a></div></div>
+<div class="box"><h2>Danh sách đơn hàng</h2><div class="tw"><table><tr><th>Mã đơn</th><th>Khách hàng</th><th>Ngày đặt</th><th>Địa điểm giao</th><th>Tổng tiền</th><th>Tình trạng</th><th>Thao tác</th></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0008</a></td><td><div class="ucell"><i>D</i>Phạm Thị D</div></td><td>06/11/2026</td><td>Q.3, TP.HCM</td><td><b>420.000₫</b></td><td><span class="ps n">Chưa xác nhận</span></td><td><div class="act"><select><option>Chưa xác nhận</option><option>Đã xác nhận</option><option>Đã hủy</option></select><a class="btn sm" href="#toast-updated">Cập nhật</a><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0007</a></td><td><div class="ucell"><i>A</i>Nguyễn Văn A</div></td><td>04/11/2026</td><td>Q.5, TP.HCM</td><td><b>2.115.000₫</b></td><td><span class="ps c">Đã xác nhận</span></td><td><div class="act"><select><option>Đã xác nhận</option><option>Đã giao</option><option>Đã hủy</option></select><a class="btn sm" href="#toast-updated">Cập nhật</a><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0006</a></td><td><div class="ucell"><i>E</i>Hoàng Văn E</div></td><td>02/11/2026</td><td>Q.Gò Vấp, TP.HCM</td><td><b>350.000₫</b></td><td><span class="ps d">Đã giao</span></td><td><div class="act"><span style="color:#94a3b8;font-size:13px">Đã hoàn tất</span><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0005</a></td><td><div class="ucell"><i>B</i>Trần Thị B</div></td><td>30/10/2026</td><td>Q.1, TP.HCM</td><td><b>1.080.000₫</b></td><td><span class="ps d">Đã giao</span></td><td><div class="act"><span style="color:#94a3b8;font-size:13px">Đã hoàn tất</span><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0004</a></td><td><div class="ucell"><i>D</i>Phạm Thị D</div></td><td>29/10/2026</td><td>TP. Thủ Đức, TP.HCM</td><td><b>640.000₫</b></td><td><span class="ps x">Đã hủy</span></td><td><div class="act"><span style="color:#94a3b8;font-size:13px">Đã hoàn tất</span><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0003</a></td><td><div class="ucell"><i>C</i>Lê Văn C</div></td><td>28/10/2026</td><td>Q.7, TP.HCM</td><td><b>980.000₫</b></td><td><span class="ps d">Đã giao</span></td><td><div class="act"><span style="color:#94a3b8;font-size:13px">Đã hoàn tất</span><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0002</a></td><td><div class="ucell"><i>A</i>Nguyễn Văn A</div></td><td>28/10/2026</td><td>Q.5, TP.HCM</td><td><b>335.000₫</b></td><td><span class="ps n">Chưa xác nhận</span></td><td><div class="act"><select><option>Chưa xác nhận</option><option>Đã xác nhận</option><option>Đã hủy</option></select><a class="btn sm" href="#toast-updated">Cập nhật</a><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr><tr><td><a class="oid" href="admin-order-detail.html">#DH0001</a></td><td><div class="ucell"><i>B</i>Trần Thị B</div></td><td>15/10/2026</td><td>Q.1, TP.HCM</td><td><b>120.000₫</b></td><td><span class="ps d">Đã giao</span></td><td><div class="act"><span style="color:#94a3b8;font-size:13px">Đã hoàn tất</span><a class="btn sm gray" href="admin-order-detail.html">Chi tiết</a></div></td></tr></table></div></div></main></div>
+<!-- Pure CSS Modals (Không dùng JavaScript) -->
+<div id="toast-saved" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Đã lưu thông tin thành công!</h3>
+    <p>Dữ liệu của bạn đã được cập nhật vào hệ thống TechParts.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Đóng thông báo</a>
+    </div>
+  </div>
+</div>
+
+<div id="toast-updated" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Cập nhật trạng thái thành công!</h3>
+    <p>Trạng thái đơn hàng đã được lưu lại trên hệ thống quản trị.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Hoàn tất</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-delete" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">⚠️</div>
+    <h3>Xác nhận xóa dữ liệu?</h3>
+    <p>Bạn có chắc chắn muốn xóa mục này khỏi hệ thống? Thao tác này không thể hoàn tác.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Xác nhận xóa</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-lock" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--or)">
+    <div style="font-size:42px">🔒</div>
+    <h3>Xác nhận khóa tài khoản?</h3>
+    <p>Tài khoản này sẽ tạm thời không thể đăng nhập hoặc đặt hàng mới.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Khóa tài khoản</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-cancel" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">🧾</div>
+    <h3>Xác nhận hủy đơn hàng?</h3>
+    <p>Bạn có chắc chắn muốn gửi yêu cầu hủy đơn hàng #DH0002 này không?</p>
+    <div class="css-modal-actions">
+      <a href="orders.html" class="btn red">Đồng ý hủy đơn</a>
+      <a href="#" class="btn gray">Quay lại</a>
+    </div>
+  </div>
+</div>
+</body></html>

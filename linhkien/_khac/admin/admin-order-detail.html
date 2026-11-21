@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chi tiết đơn hàng DH0002 – Quản trị</title><link rel="stylesheet" href="../style.css"></head><body>
+<div class="admin"><aside><h3>⚡ Quản trị</h3><a class="" href="admin.html">🏠 Tổng quan</a><a class="" href="admin-users.html">👥 Quản lý người dùng</a><a class="" href="admin-products.html">📦 Quản lý sản phẩm</a><a class="on" href="admin-orders.html">🧾 Quản lý đơn hàng</a><a class="" href="admin-stats.html">📊 Thống kê</a><a class="store-link" href="../user/index.html">🌐 Xem trang Cửa hàng</a><a class="logout-link" href="admin-login.html">🚪 Đăng xuất</a></aside>
+<main><div class="top"><h1>Chi tiết đơn hàng</h1><span>👤 Quản trị viên</span></div>
+<p class="crumb"><a href="admin-orders.html">Quản lý đơn hàng</a> › Đơn DH0002</p>
+<div class="ohead"><div><small>Mã đơn hàng</small><div class="code">#DH0002</div><p>Khách hàng: <b>Nguyễn Văn A</b> · Đặt lúc 09:15 – 28/10/2026</p></div><div><span class="pill">⏳ Chưa xác nhận</span></div></div>
+<div class="box"><h2>Tiến trình đơn hàng</h2><div class="tl"><div class="done" data-i="📝">Đã đặt hàng<small>28/10/2026 09:15</small></div><div class="on" data-i="✅">Chờ xác nhận<small>Đang xử lý</small></div><div data-i="🚚">Đang giao hàng<small>Dự kiến 29/10</small></div><div data-i="📦">Giao thành công<small>Dự kiến 31/10</small></div></div>
+<div class="row" style="margin-top:18px;background:#f8fafc;padding:14px;border-radius:14px"><div><label>Cập nhật tình trạng</label><select><option>Chưa xác nhận</option><option>Đã xác nhận</option><option>Đã giao</option><option>Đã hủy</option></select></div><div><a class="btn" href="#toast-updated">Cập nhật</a></div></div></div>
+<div class="cartgrid"><div><div class="box"><h2>Sản phẩm trong đơn (2)</h2><div class="item"><div class="thumb"><img src="../images/arduino-uno-r3.jpg" alt="Arduino Uno R3" loading="lazy"></div><div class="nm"><b>Arduino Uno R3</b><small>Vi điều khiển · <span class="ok">● Còn hàng</span></small></div><div class="q">× 1</div><div class="pr">185.000₫</div></div><div class="item"><div class="thumb"><img src="../images/cam-bien-dht22.jpg" alt="Cảm biến DHT22" loading="lazy"></div><div class="nm"><b>Cảm biến DHT22</b><small>Cảm biến · <span class="ok">● Còn hàng</span></small></div><div class="q">× 2</div><div class="pr">150.000₫</div></div></div>
+<div class="box"><h2>Ghi chú nội bộ</h2><textarea rows="3" placeholder="Nhập ghi chú cho đơn hàng..."></textarea><p style="margin-top:12px"><a class="btn sm" href="#toast-saved">Lưu ghi chú</a></p></div></div>
+<div><div class="box"><h2>Khách hàng</h2><div class="cust"><div class="avatar">A</div><div><b>Nguyễn Văn A</b><br><small>nguyenvana · nguyenvana@gmail.com</small></div></div>
+<div class="info" style="grid-template-columns:1fr"><div class="tile"><h5>📞 Điện thoại</h5><b>0901234567</b></div><div class="tile"><h5>📍 Địa chỉ giao hàng</h5><b>273 An Dương Vương, P.4, Q.5, TP.HCM</b></div><div class="tile"><h5>💵 Thanh toán</h5><b>Tiền mặt khi nhận hàng</b></div></div></div>
+<div class="box invoice"><h2>Thanh toán</h2><p><span>Tạm tính</span><b>335.000₫</b></p><p><span>Phí vận chuyển</span><b style="color:#16a34a">Miễn phí</b></p><p class="tot"><span>Tổng cộng</span><span>335.000₫</span></p><a class="btn gray" href="admin-orders.html">← Quay lại danh sách</a></div></div></div></main></div>
+<!-- Pure CSS Modals (Không dùng JavaScript) -->
+<div id="toast-saved" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Đã lưu thông tin thành công!</h3>
+    <p>Dữ liệu của bạn đã được cập nhật vào hệ thống TechParts.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Đóng thông báo</a>
+    </div>
+  </div>
+</div>
+
+<div id="toast-updated" class="css-modal">
+  <div class="css-modal-card">
+    <div style="font-size:42px">✅</div>
+    <h3>Cập nhật trạng thái thành công!</h3>
+    <p>Trạng thái đơn hàng đã được lưu lại trên hệ thống quản trị.</p>
+    <div class="css-modal-actions">
+      <a href="#" class="btn">Hoàn tất</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-delete" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">⚠️</div>
+    <h3>Xác nhận xóa dữ liệu?</h3>
+    <p>Bạn có chắc chắn muốn xóa mục này khỏi hệ thống? Thao tác này không thể hoàn tác.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Xác nhận xóa</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-lock" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--or)">
+    <div style="font-size:42px">🔒</div>
+    <h3>Xác nhận khóa tài khoản?</h3>
+    <p>Tài khoản này sẽ tạm thời không thể đăng nhập hoặc đặt hàng mới.</p>
+    <div class="css-modal-actions">
+      <a href="#toast-saved" class="btn red">Khóa tài khoản</a>
+      <a href="#" class="btn gray">Hủy bỏ</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal-cancel" class="css-modal">
+  <div class="css-modal-card" style="border-top-color:var(--red)">
+    <div style="font-size:42px">🧾</div>
+    <h3>Xác nhận hủy đơn hàng?</h3>
+    <p>Bạn có chắc chắn muốn gửi yêu cầu hủy đơn hàng #DH0002 này không?</p>
+    <div class="css-modal-actions">
+      <a href="orders.html" class="btn red">Đồng ý hủy đơn</a>
+      <a href="#" class="btn gray">Quay lại</a>
+    </div>
+  </div>
+</div>
+</body></html>
